@@ -1,2 +1,3 @@
 # Daily-Codes
-This is my first git repository.
+This is my 1st git repository.
+
