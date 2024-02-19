@@ -1,26 +1,26 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,sumo=0,sume=0;
-    printf("Enter number of elements");
+    int n,i,sumo = 0,sume = 0;
+    printf("Enter number of elements: ");
     scanf("%d",&n);
+   
     int a[n];
     for(i=0;i<n;i++)
     {
-        printf("Enter number");
+        printf("Enter element %d: ", i);
         scanf("%d",&a[i]);
     }
     
-    for(i=1;i<n;i+2)
+    for(i = 0; i < n; i++)
     {
-
-        sumo=sumo+a[i];
+        if(i%2==0){
+            sume=sume+a[i];
+        }
+        else if(i%2 != 0){
+            sumo=sumo+a[i];
+        }
     }
-    for(i=0;i<n;i+2)
-    {
-
-        sume=sume+a[i];
-    }
-    printf("sum of odd =%d even=%d",sumo,sume);
+    printf("sum of even = %d, sum of odd = %d",sume, sumo);
     return 0;
 }
