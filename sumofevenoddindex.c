@@ -14,10 +14,12 @@ int main()
     
     for(i = 0; i < n; i++)
     {
-        if(i%2==0){
+        if(i%2==0)
+        {
             sume=sume+a[i];
         }
-        else if(i%2 != 0){
+        else 
+        {
             sumo=sumo+a[i];
         }
     }
