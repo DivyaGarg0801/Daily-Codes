@@ -21,10 +21,13 @@ int main()
    }
 
    for(i= 2; i<n; i++) {
-      if( largest < a[i] ) {
+      if( largest < a[i] ) 
+      {
          second = largest;
          largest = a[i];
-      } else if( second < a[i] ) {
+      } 
+      else
+      {
          second =  a[i];
       }
    }
