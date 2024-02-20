@@ -3,10 +3,11 @@
 int checkPerfect(int n1);
 int main()
 {
-    int n1;
+    int n1,a;
     printf(" Input any number: ");
     scanf("%d", &n1);
-    if(checkPerfect(n1))
+    a=checkPerfect(n1);
+    if(a)
     {
         printf(" The %d is a perfect number.\n", n1);
     }
