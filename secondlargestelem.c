@@ -1,8 +1,16 @@
 #include <stdio.h>
 
-int main() {
-   int a[10] = {101, 11, 3, 4, 50, 69, 7, 8, 9, 0};
-   int i, largest, second;
+int main()
+ {
+   int i,n;
+   printf("Enter array elements:");
+   scanf("%d",&n);
+   int a[n];
+   for(i=0;i<n;i++)
+   {
+      scanf("%d",&a[i]);
+   }
+   int largest, second;
 
    if(a[0] > a[1]) {
       largest = a[0];
@@ -12,7 +20,7 @@ int main() {
       second  = a[0];
    }
 
-   for(i= 2; i< 10; i++) {
+   for(i= 2; i<n; i++) {
       if( largest < a[i] ) {
          second = largest;
          largest = a[i];
