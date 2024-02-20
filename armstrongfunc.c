@@ -3,10 +3,11 @@
 int checkArmstrong(int n1);
 int main()
 {
-    int n1;
+    int n1,a;
     printf(" Input any number: ");
     scanf("%d", &n1);
-    if(checkArmstrong(n1))
+    a=checkArmstrong(n1);
+    if(a)
     {
         printf(" The %d is an Armstrong number.\n", n1);
     }
