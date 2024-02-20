@@ -18,18 +18,19 @@ int main()
 }
 int checkArmstrong(int n1) 
 {
-    int n2,ld,a=1, sum=0,num,len=0,i;
+    int n2,ld, sum=0,num,len=0,i;
     num=n1;
     n2=n1;
-    while(n1!=0)  
+    while(n1>0)  
     {  
         ld = n1% 10;  
         len++;
         n1=n1/10;        
     }
-    while(num!=0)
+    while(num>0)
     {
         ld=num%10;
+        int a=1;
         for(i=0;i<len;i++)
         {
             a=a*ld;
