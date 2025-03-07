@@ -7,7 +7,7 @@ int main()
     gets(a);
     int l,ch,i,j;
     l=strlen(a);
-    printf("Enter 1 for ascending and enter 2 for descending :");
+    printf("Enter 1 for ascending and enter 2 for descending : ");
     scanf("%d",&ch);
     if (ch==1)
     {
